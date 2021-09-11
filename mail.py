@@ -5,19 +5,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-gmail_user = "21sharadha@gmail.com"
-gmail_pwd = "kasinagappan"
-toaddr = '21sharadha@gmail.com'
-me = '21sharadha@gmail.com'
+gmail_user = "sharadha@gmail.com"
+gmail_pwd = "your_password"
+toaddr = 'sharadha@gmail.com'
+me = 'sharadha@gmail.com'
 Subject = 'security alert'
 
 
 def mail(subject, text, attach):
     msg = MIMEMultipart()
     msg['From'] = gmail_user
-    msg['To'] = "21sharadha@gmail.com"
+    msg['To'] = "sharadha@gmail.com"
     msg['Subject'] = subject
-    to = "21sharadha@gmail.com"
+    to = "sharadha@gmail.com"
     msg.attach(MIMEText(text))
 
     part = MIMEBase('application', 'octet-stream')
